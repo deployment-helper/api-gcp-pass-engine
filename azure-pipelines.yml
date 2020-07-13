@@ -50,7 +50,7 @@ stages:
         displayName: "DeployTODev"
         condition: "and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/develop'))"
         variables:
-          - group: "api_aws_step_function_dev"
+          - group: "api-gcp-pass-engine-dev"
         steps:
           - task: DownloadBuildArtifacts@0
             inputs:
@@ -72,7 +72,7 @@ stages:
             displayName: "Download GCP Key"
             name: "AuthKey"
             inputs:
-              secureFile: "api-aws-step-function-dev-bdb39695a190.json"
+              secureFile: "api-gcp-pass-engine-dev-e4a5b0ab3f57.json"
               retryCount: "2"
           - script: |
               wget https://dl.google.com/dl/cloudsdk/release/google-cloud-sdk.tar.gz
@@ -90,7 +90,7 @@ stages:
         displayName: "DeployToProd"
         condition: "and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))"
         variables:
-          - group: "api_aws_step_function_prod"
+          - group: "api-gcp-pass-engine-prod"
         steps:
           - task: DownloadBuildArtifacts@0
             inputs:
@@ -110,7 +110,7 @@ stages:
             displayName: "Download GCP Key"
             name: "AuthKey"
             inputs:
-              secureFile: "api-aws-step-function-prod-680c23326ad8.json"
+              secureFile: "api-gcp-pass-engine-prod-31aa33124972.json"
               retryCount: "2"
           - script: env
             displayName: "Logs"
