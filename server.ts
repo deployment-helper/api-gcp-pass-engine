@@ -31,6 +31,7 @@ app.use(
     path: [
       { url: "/api/v1/user", methods: ["POST"], method: "POST" },
       "/api/v1/appengine",
+      "/api/v1/appengine/getapp",
       "/api/v1/health",
     ],
   })
