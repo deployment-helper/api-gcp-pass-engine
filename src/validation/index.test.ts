@@ -1,9 +1,9 @@
-import { regLoginSchema, reqAddUserSchema } from "./index";
+import { reqCreateApplication, reqGetApplication } from "./index";
 describe("Validation Tests", () => {
-  test("regLoginSchema should loaded", () => {
-    expect(regLoginSchema).toBeTruthy();
+  test("reqCreateApplication should loaded", () => {
+    expect(reqCreateApplication).toBeTruthy();
   });
-  test("reqAddUserSchema should loaded", () => {
-    expect(reqAddUserSchema).toBeTruthy();
+  test("reqGetApplication should loaded", () => {
+    expect(reqGetApplication).toBeTruthy();
   });
 });
