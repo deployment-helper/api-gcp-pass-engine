@@ -1,16 +1,14 @@
-
 # gcp-nodejs-appengine
 
+Master [![Build Status](https://dev.azure.com/vinaymavi/MCRC/_apis/build/status/myjunior.api-gcp-pass-engine?branchName=master)](https://dev.azure.com/vinaymavi/MCRC/_build/latest?definitionId=4&branchName=master)
 
-[![Build Status](https://dev.azure.com/vinaymavi/Quiz%20Platfrom/_apis/build/status/user-management?branchName=develop)](https://dev.azure.com/vinaymavi/Quiz%20Platfrom/_build/latest?definitionId=1&branchName=develop)
+Develop [![Build Status](https://dev.azure.com/vinaymavi/MCRC/_apis/build/status/myjunior.api-gcp-pass-engine?branchName=develop)](https://dev.azure.com/vinaymavi/MCRC/_build/latest?definitionId=4&branchName=develop)
 
 User Management Backend service
 
 ## Local Development
 
 <!-- TODO Architecure daigram required -->
-
-
 
 - Run Mongodb db
 
